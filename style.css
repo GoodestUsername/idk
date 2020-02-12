@@ -1,26 +1,26 @@
 .flex {
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .container {
-    height: 90vh;
-    overflow: hidden;
-  }
-  li {
-    float: left;
-    font-size: 16px;
-    background-color: lightblue;
-    padding: 10px 10px;
-    text-decoration: none;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
 }
 
-  li:hover {
-    cursor: pointer;
-    background-color: red;
-  }
-  
-  ul { 
-    list-style-type: none; 
-  }
+.container {
+  height: 90vh;
+  overflow: hidden;
+}
+li {
+  float: left;
+  font-size: 16px;
+  background-color: lightblue;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+ul { 
+  list-style-type: none; 
+}
