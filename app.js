@@ -3,13 +3,25 @@ var inp = document.querySelector("input");
 var myMovieList = document.querySelector("ul");
 
 // Added movieHistory **1
-var movieHistory = document.querySelector("#movieHistoryCard");
+var movieHistory = document.querySelector("movieHistoryCard");
 
 // Added myMOvies object **2sasdasdasd
 var myMovies = {
     
 };
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+var squaredNumbers = numbers.map(squareNumbers)
+// map is iterating each entity of the array(numbers) through the function squareNumbers. Meaning passing each item in the array into the function
+// and returning the the squared number into the declared variable squaredNumbers until all of the variables have been passed in.
+function squareNumbers(num) {
+    return Math.pow(num, 2);
+  }
+document.getElementById("movieHistoryCard").innerHTML = "Squares of numbers 1-10 are:" + squaredNumbers;
 
+var secondTetration = numbers.map(function(num) {
+    return Math.pow(num, num)
+})
+document.getElementById("movieHistoryCar").innerHTML = "Second tetration of previous numbers are: " + secondTetration;
 if(localStorage.getItem("myMovies")) {
     myMovies = JSON.parse(localStorage.getItem("myMovies"));
     updateMovieHistory();
